@@ -1,92 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MY PROYECTO</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Handlee&family=Quicksand:wght@500;600;700&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Document</title>
 </head>
 
-<body>
-  <h1>Desafío Complementario</h1>
-  <hr>
-  <h2>Alumna: Clara Neira</h2>
-  <h2>Profesor: Matias Miro</h2>
+<body id="grilla">
+    
+    <header><img class="logo" src="./assets/images/picwish.png" alt="LOGO"></header>
 
+    <nav>
 
-  <ol type="a" reversed>
-    <li>azucar</li>
-    <li>huevos</li>
-    <li>manteca</li>
+        <ul >
+          <li ><a href="./index.html">INICIO</a></li>
+            <li ><a href="./pages/contacto.html">CONTACTO</a></li>
+            <li ><a href="./pages/talleres.html">TALLERES</a></li>
+            <li ><a href="./pages/testimonios.html">TESTIMONIOS</a></li>
+            <li ><a href="./pages/perfil.html">PERFIL</a></li>
+        </ul>
+    </nav>
 
-  </ol>
+    <main>
+        <section id="seccionUno">
+            <div class="cajaUno">
+            <article class="articulo">
+              <div class="boxFotoBelu"><img  class="fotoBelu" src="./assets/images/belu.JPG" alt="Belu"></div>
+              <h2 class="tituloArticulo">Conociendo a Belu</h2>
+              <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor sint nulla cumque rerum odio blanditiis vitae non id, mollitia consequuntur? Neque iste exercitationem molestiae ducimus, aliquid quisquam distinctio. Cupiditate.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor sint nulla cumque rerum odio blanditiis vitae non id, mollitia consequuntur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor sint nulla cumque rerum odio blanditiis vitae non id, mollitia consequuntur? Neque iste exercitationem molestiae ducimus, aliquid quisquam distinctio. Cupiditate.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor sint nulla cumque rerum odio blanditiis vitae non id, mollitia consequuntur? 
+              </p>
+              <a class="boton" href="./pages/contacto.html">CONTACTANOS</a>
+            </article>
+        </section>
 
-<div>HOLAHOLAHOLA</div>
-  <ul>
-    <li>azucar</li>
-    <li>huevos</li>
-    <li>manteca</li>
+        <section id="seccionDos">
+            <div><iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/NRhcvlcFmAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+            </div> 
+        </section>
 
-  </ul>
-<main>
-  <section>CHAUCHAU</section>
-</main>
-  <!-- <table border="5px" cellspacing="20px">
-    <tr>
-      <th colspan="3">Header</th>
-      <!-- <th>TH COL 2</th>
-      <th>TH COL 3</th> -->
-    </tr>
-    <tr>
-      <td rowspan="2">TD1 COL 1</td>
-      <!-- <td>TD1 COL 2</td>
-      <td>TD1 COL 3</td> -->
-    </tr>
-    <tr>
-      <td colspan="3">TD2 COL 1</td>
-      <!-- <td>TD2 COL 2</td>
-      <td>TD2 COL 3</td> -->
-    </tr>
-  </table> -->
+        <aside id="aside">
+            <div class="cajaTextoVideo">
+            <p class="textoVideo">Lorem blanditiis impedit. Quos, sequi consectetur.orem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ducimus minima nobis cupiditate autem ex, incidunt et unde facilis, totam, quos cumque odit magni voluptatem blanditiis impedit. Quos, sequiLorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ducimus minima nobis cupiditate autem ex, incidunt et unde facilis, totam, quos cumque odit magni voluptatem blanditiis impedit. Quos, sequi consectetur.orem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ducimus minima nobis cupiditate autem ex, incidunt et unde facilis, totam, quos cumque odit magni voluptatem blanditiis impedit. Quos, sequi </p>
+        </div>
+        </aside>
+    </main>
 
-<hr>
-
-  <!-- FORMULARIOS -->
-
-  <form action="" method="post">
-    <fieldset>
-    <div>
-<label for="Nombre">INGRESE NOMBRE</label>
-<input type="text" id="Nombre" placeholder="Nombre">
-</div>
-<div>
-<label for="Mail">INGRESE EMAIL</label>
-<input type="text" id="Mail" placeholder="Ingrese mail">
-</div>
-<div>
-<label for="Pass">INGRESE CONTRASEÑA</label>
-<input type="text" id="Pass">
-</div>
-
-<div>
-  <br>
-  Género <label for="genero M"> Masculino </label> 
-  <input type="radio" name="genero M" id="genero M" value="Masculino">
-  Género <label for="genero F"> Femenino </label> 
-  <input type="radio" name="genero F" id="genero F" value="Femenino">
-</div>
-
-<input type="button" value="Enviar">
-<input id="Enviar" type="Submit" value="Enviar">
-<input id="reset" type="reset" value="Limpiar">
-
-
-
-
-
-
-  </form>
-</fieldset>
-
-<footer>FOOTER</footer>
+    <footer>FOOTER</footer>
+</body>
+</html>
