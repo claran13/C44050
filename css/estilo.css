@@ -72,6 +72,10 @@ nav ul li a {
     
 }
 
+nav ul li:hover {
+    scale: 1.1;
+    background-color: #ddd9d9;
+}
 
 main {
     grid-area: main;
@@ -344,6 +348,10 @@ legend {
     border: 2px solid black;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+.botones:hover {
+    scale: 1.1;
+    background-color: #ddd9d9;
 }
 
 
