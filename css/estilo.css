@@ -72,11 +72,6 @@ nav ul li a {
     
 }
 
-nav ul li:hover {
-    scale: 1.1;
-    background-color: #ddd9d9;
-
-}
 
 main {
     grid-area: main;
@@ -351,10 +346,6 @@ legend {
     margin-bottom: 10px;
 }
 
-.botones:hover {
-    scale: 1.1;
-    background-color: #ddd9d9;
-}
 
 @media only screen and (max-width: 1200px) {
 
