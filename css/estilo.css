@@ -1,0 +1,414 @@
+* { 
+    margin: 0;
+    padding: 0; 
+    box-sizing:border-box; 
+    }
+
+#grilla {
+    width: 99vw;
+    height: 150vh;
+    display: grid;
+    grid-template-areas:
+    "head nav nav nav"
+    "main main main main"
+    "main main main main"
+    "foot foot foot foot";
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-rows:.2fr 1fr 1fr .2fr;
+    grid-row-gap: 10px;
+    background-color: #faf6f6;
+ 
+   
+}
+
+header {
+    grid-area: head;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: sticky;
+    top: .1px;
+
+}
+
+.logo {
+    width: 5vw;
+    height: 11vh;
+    
+}
+
+nav {
+    grid-area: nav;
+    background-color: #f5f5f5; 
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: sticky;
+    top: .1px;
+}
+
+nav ul { 
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 3px;
+    margin-right: 9px;
+ 
+}
+
+nav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav ul li:hover {
+    scale: 1.1;
+    background-color: #ddd9d9;
+
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "secUno secUno aside"
+    "secDos secDos aside";
+    grid-template-columns: 1.1fr 1.1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+}
+
+#seccionUno {
+    grid-area: secUno;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#seccionDos {
+    grid-area: secDos;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aside {
+    grid-area: aside;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    grid-area: foot;
+    background-color: #f5f5f5;
+}
+
+.cajaUno {  
+    height: 320px;
+    width: 90%;
+}
+.boxFotoBelu {
+    width:.01px; 
+    height: 20px;
+    background-color: rgb(155, 146, 235);
+}
+.fotoBelu {
+    width:150px; 
+    height: 200px;
+    padding-top: 60px;
+    padding-left: 10px;
+}   
+.tituloArticulo{
+    font-family: 'Fredericka the Great', cursive;;
+font-weight: 700;
+font-size: 14px;
+text-align: center;
+}
+.articulo{ 
+   
+    width:100%;     
+    height: 100%;
+    background-color: rgb(192, 146, 235); 
+    border-style: dotted;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: rgb(160, 79, 235)
+    }
+
+.parrafo {
+    
+    padding-left: 155px;
+    padding-right: 20px;
+    padding-top: 5px;
+    line-height: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    
+}
+
+.boton {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: rgb(218, 199, 235);
+    padding: 2px;
+    margin-right: 10px;
+    margin-left: 350px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-top: -80px;
+}
+.boton:hover {
+    scale: 1.1;
+    background-color: white;
+}
+
+.cajaTextoVideo {
+    width: 350px;     
+    height: 620px;
+    background-color: #ede7f6;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: #a16bf1;
+}
+
+.textoVideo {
+    
+    font-family: 'Quicksand', sans-serif;
+    line-height: 25px;
+    padding: 30px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 5vw;
+        height: 9vh;
+        }
+     .fotoBelu {
+            width:100px; 
+            height: 150px;
+            padding-top: 60px;
+            padding-left: 10px;
+        }
+        .parrafo {
+    
+            padding-left: 110px;
+            padding-right: 10px;
+            padding-top: 5px;
+            line-height: 15px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 12px;
+            
+            }
+            
+            .boton {
+                font-family: 'Quicksand', sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                text-decoration: none;
+                color: black;
+                display: inline-block;
+                background-color: rgb(218, 199, 235);
+                padding: 2px;
+                margin-right: 10px;
+                margin-left: 200px;
+                border: 2px solid black;
+                border-radius: 8px;
+                
+            }
+            .video {
+                width: 250px;
+                height: 250px;
+            }
+            .cajaTextoVideo {
+                width: 250px;     
+                height: 580px;
+                background-color: #ede7f6;
+                border-radius: 40px;
+                border-style: solid;
+                border-color: #a16bf1;
+            }
+            
+            .textoVideo {
+                
+                font-family: 'Quicksand', sans-serif;
+                line-height: 20px;
+                padding: 30px;
+            }
+
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul li a {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: black;
+        font-size: 9px;
+    }
+        
+    .logo {
+            width: 8vw;
+            height: 9vh;
+            }
+
+            main {
+                display: grid;
+    grid-template-areas:
+    "secUno secUno"
+    "secDos secDos";
+                grid-template-columns: 1.5fr 1.5fr;
+                grid-template-rows: repeat(2, 1fr);
+                display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+            }
+}
+
+
+#grillasDos {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "head nav nav nav"
+    "mainCon mainCon mainCon mainCon"
+    "foot foot foot foot";
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-rows:.2fr 1fr .2fr;
+    grid-row-gap: 10px;
+    background-color: #faf6f6;
+}
+
+#mainContacto {
+    grid-area: mainCon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+label {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+fieldset {
+    margin: 20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(227, 203, 252);
+    width: 800px;
+}
+
+legend {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+
+.comentarios {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+.botones {
+    
+    background-color: white;
+    padding: 5px;
+    margin-top: 12px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.botones:hover {
+    scale: 1.1;
+    background-color: #ddd9d9;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    fieldset {
+        margin: 20px;
+        line-height: 40px;
+        text-align: center;
+        background-color: rgb(227, 203, 252);
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    label {
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    fieldset {
+        margin: 20px;
+        line-height: 30px;
+        text-align: center;
+        background-color: rgb(227, 203, 252);
+        width: 200px;
+
+    }
+
+   
+    
+    legend {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 10px;
+    }
+    
+    .comentarios {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 15px;
+        padding: 10px;
+        
+        
+    }
+    .botones {
+        
+        background-color: white;
+        padding: 5px;
+        margin-top: 12px;
+        margin-right: 10px;
+        border: 2px solid black;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+}
