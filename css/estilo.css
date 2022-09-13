@@ -25,6 +25,7 @@ header {
     justify-content: left;
     position: sticky;
     top: .1px;
+    z-index: 2;
 
 }
 
@@ -42,6 +43,7 @@ nav {
     justify-content: end;
     position: sticky;
     top: .1px;
+    z-index: 2;
 }
 
 nav ul { 
@@ -110,6 +112,7 @@ main {
 footer {
     grid-area: foot;
     background-color: #080808;
+    
 
 }
 
@@ -458,3 +461,436 @@ legend {
     }
     
 }
+
+#grillaTalleres {
+    width: 100vw;
+    height: 150vh;
+    display: grid;
+    grid-template-areas:
+    "head nav"
+    "mainTall mainTall"
+    "foot foot";
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 10px;
+    background-color: #bab9bb;
+}
+
+#mainTalleres {
+    grid-area: mainTall;
+    display: grid;
+    grid-template-areas:
+    "secUnoTa secUnoTa"
+    "secDosTa secDosTa";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+}
+
+#seccionUnoTalleres {
+    grid-area: secUnoTa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#seccionDosTalleres {
+    grid-area: secDosTa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#tallerUno {
+    grid-area: tallUno;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://www.joyeriadeluxe.com/fr-1200x800-data/fotos/como-se-hacen-los-relojes-de-arena40.jpg");
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#tallerDos {
+    background-image: url("https://www.ayselucus.es/sites/default/files/noticias/fotos/6603545f-44a0-4bb5-a208-4538c50f0230.png");
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: tallDos;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cajaTallerUno {
+    height: 300px;
+    width: 700px;
+    background-color: rgb(167, 194, 230);
+    border-radius: 20px;
+    border-style: double;
+    border-color: rgb(40, 126, 238);
+    margin-left: 20px;
+}
+
+.cajaTallerDos {
+    height: 300px;
+    width: 700px;
+    background-color: rgb(167, 194, 230);
+    border-radius: 20px;
+    border-style: double;
+    border-color: rgb(40, 126, 238);
+    margin-left: 20px;
+}
+
+.tituloTaller { 
+    font-family: 'Handlee', cursive;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.parrafoTaller {
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+    font-size: 15px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        #tallerUno {
+            height: 280px;
+            width: 280px;
+            margin-left: 20px;
+            
+        }
+        
+        #tallerDos {
+            height: 280px;
+            width: 280px;
+            margin-left: 20px;
+        }
+
+        .cajaTallerUno {
+            height: 250px;
+            width: 650px;
+        }
+        .cajaTallerDos {
+            height: 250px;
+            width: 650px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #tallerUno {
+            height: 200px;
+            width: 200px;
+            margin-left: 10px;
+      
+            
+        }
+        
+        #tallerDos {
+            height: 200px;
+            width: 200px;
+            margin-left: 10px;
+    background-size: contain;
+        }
+
+        .cajaTallerUno, .cajaTallerDos {
+            margin-right: 10px;
+        }
+        
+    }
+
+    @media only screen and (max-width: 700px) {
+
+    }
+
+    @media only screen and (max-width: 480px) {
+
+            #seccionUnoTalleres {
+                display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            }
+            #seccionDosTalleres {
+                display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            }
+
+        
+            .cajaTallerUno, .cajaTallerDos {
+                height: 150px;
+                width: 400px;
+                margin-top: 10px;
+            }
+            .tituloTaller { 
+                font-family: 'Handlee', cursive;
+                padding: 10px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .parrafoTaller {
+                text-align: center;
+                line-height: 15px;
+                font-family: 'Quicksand', sans-serif;
+                padding: 10px;
+                font-size: 10px;
+                }
+        }
+
+
+        #grillaPerfil {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+            "head nav"
+            "mainPe mainPe"
+            "foot foot";
+            grid-template-columns: 50% 50%;
+            grid-row: 10% 50% 40%;
+            grid-row-gap: 10px;
+            background-color: #bab9bb;
+        }
+
+        #mainPerfil {
+            grid-area: mainPe;
+            grid-template-areas:
+            "secPe asiPe";
+            grid-template-columns: 50% 50%;
+            height: 1300px;
+        }
+
+        #sectionPerfil {
+            grid-area: secPe;
+            display: flex;
+    align-items: center;
+    justify-content: center;
+        }
+
+        #asidePerfil {
+            grid-area: asiPe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            
+        }
+
+        .cajaPerfil {
+            width: 500px;
+            height: 1200px;
+            background-color: rgb(236, 186, 238);
+            border-color: black;
+        border-style: dotted;
+        border-radius: 20px;
+        }
+
+        .tituloPerfil {
+            font-family: 'Fredericka the Great', cursive;;
+font-weight: 700;
+font-size: 28px;
+text-align: center;
+padding-top: 10px;
+        }
+
+        .parrafoPerfil {
+            text-align: center;
+            line-height: 30px;
+            font-family: 'Quicksand', sans-serif;
+            padding: 40px;
+            }
+
+        .fotoBeluDos {
+            width: 400px;
+            height: 600px;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .cajaPerfil {
+                margin-right: 20px;
+            }
+        
+
+            }
+
+        @media only screen and (max-width: 768px) {
+            .parrafoPerfil {
+                font-size: 15px;
+                line-height: 20px;
+                font-family: 'Quicksand', sans-serif;
+                padding: 40px;
+                }
+                .fotoBeluDos {
+                    width: 280px;
+                    height: 300px;
+                }
+        }
+            @media only screen and (max-width: 700px) {
+                .parrafoPerfil {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-family: 'Quicksand', sans-serif;
+                    padding: 40px;
+                    }
+            }
+                @media only screen and (max-width: 480px) {
+
+
+                    .cajaPerfil {
+                        height: 800px;
+                        width: 400px;
+                    }
+                    .parrafoPerfil {
+                        text-align: center;
+                        line-height: 20px;
+                        font-family: 'Quicksand', sans-serif;
+                        font-size: 11px;
+                        }
+
+                        .fotoBeluDos {
+                            margin-top: -60px;
+                        }
+                }
+
+
+
+                #grillaTest {
+                    width: 100vw;
+                    height: 150vh;
+                    display: grid;
+                    grid-template-areas:
+                    "head nav"
+                    "mainTest mainTest"
+                    "foot foot";
+                    grid-template-columns: 50% 50%;
+                    grid-row-gap: 50px;
+                    background-color: #bab9bb;
+                }
+                #mainTest {
+                    grid-area: mainTest;
+                    display: grid;
+                    grid-template-areas:
+                    "secUnoT secUnoT"
+                    "secDosT secDosT";
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-column-gap: 80px;
+                    grid-row-gap: 10px;
+                    
+                }
+
+                #seccionUnoTest{
+                    grid-area: secUnoT;
+            display: flex;
+    align-items: center;
+    justify-content: center;
+                }
+
+                #seccionDosTest{
+                    grid-area: secDosT;
+                    display: flex;
+            align-items: center;
+            justify-content: center;
+                        }
+
+                        .cajaSecUnoT, .cajaSecDosT {
+                            background-color: #bab9bb;
+                            width: 700px;
+                            height: 200px;
+                            border-radius: 10px;
+                            border-color: rgb(172, 106, 166);
+                            border-style:dotted;
+                            border-width: 7px;
+                            margin-left: 50px;
+                            
+                        }
+    .fotoUnoT {
+        width: 300px;
+        height: 300px;
+
+    }
+.cajafotoDosT {
+    z-index: 1;
+}
+    .parrafoT {
+            text-align: center;
+            line-height: 30px;
+            font-family: 'Quicksand', sans-serif;
+            padding: 30px;
+            }
+    
+            @media only screen and (max-width: 1200px) {
+                .cajaSecUnoT, .cajaSecDosT {
+                    margin-right: 20px;
+                    }
+
+                    .fotoUnoT, .fotoDosT {
+                        margin-left: 20px;
+                    }
+
+                    .fotoUnoT, .fotoDosT {
+                        scale: 0.8;
+                    }
+                    .parrafoT {
+                        line-height: 20px;
+                        padding: 20px;
+                    }
+            
+                }
+
+                
+            @media only screen and (max-width: 768px) {
+                
+    
+            }
+            
+            @media only screen and (max-width: 700px) {
+   
+                    #seccionUnoTest {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+
+                    }
+
+                    #seccionDosTest {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+
+                    }
+                    .cajaSecUnoT, .cajaSecDosT {
+                        width: 500px;
+                        height: 200px;
+                    }
+                    .parrafoT {
+                        line-height: 25px;
+                        padding: 20px;
+                    }
+            
+            }
+            
+            @media only screen and (max-width: 480px) {
+                .cajaSecUnoT, .cajaSecDosT {
+                    width: 400px;
+                    height: 200px;
+                }
+                .parrafoT {
+                    line-height: 20px;
+                    padding: 20px;
+                }
+    
+            }
