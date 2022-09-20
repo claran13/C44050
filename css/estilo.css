@@ -3,538 +3,230 @@
     padding: 0; 
     box-sizing:border-box; 
     }
+@font-face {
+    font-family: "copper" ;
+    src: url(../assets/fonts/copper_penny_dtp/Copper\ Penny\ DTP.ttf);
+}
+@font-face {
+    font-family: "geo";
+    src: url(../assets/fonts/geo_sans_light/GeosansLight.ttf);
+}
 
-#grilla {
+body {
     width: 100vw;
-    height: 150vh;
-    display: grid;
-    grid-template-areas:
-    "head nav"
-    "main main"
-    "foot foot";
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 10px;
-    background-color: #bab9bb;
+    height: 160vh;
+}
+#header {
+    height: 10vh;
+}
+#main {
+    height: 160vh;
+    background-color:#ecfeff;
 }
 
-header {
-    grid-area: head;
-    background-color: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    position: sticky;
-    top: .1px;
-    z-index: 2;
-
-}
-
-.logo {
-    width: 5vw;
-    height: 11vh;
-    
+#footer {
+    height: 10vh;
+    background-color: #869294;
 }
 
 nav {
-    grid-area: nav;
-    background-color: #f5f5f5; 
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    position: sticky;
-    top: .1px;
-    z-index: 2;
-}
+    background-color: #bacbcd;
 
-nav ul { 
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
 }
-
-nav ul li {
-    display: inline-block;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 3px;
-    margin-right: 9px;
- 
-}
-
-nav ul li a {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    color: black;
-    
-}
-
 nav ul li:hover {
     scale: 1.1;
-    background-color: #ddd9d9;
-
 }
-
-.animate__rotateIn {
-    animation-duration: 2s;
-    
-}
-
-.animate__bounceIn
-{
-    animation-duration: 5s;
-    animation-delay: 1s;
-}
-
-main {
-    grid-area: main;
-    display: grid;
-    grid-template-areas:
-    "secUno secUno aside"
-    "secDos secDos aside";
-    grid-template-columns: 1.1fr 1.1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    
-}
-
-#seccionUno {
-    grid-area: secUno;
-
+.navbar-nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-}
-
-#seccionDos {
-    grid-area: secDos;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#aside {
-    grid-area: aside;
- 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer {
-    grid-area: foot;
-    background-color: #080808;
-    
-
-}
-
-.cajaUno {  
-    height: 320px;
-    width: 90%;
-}
-.boxFotoBelu {
-    width:.01px; 
-    height: 20px;
-    background-color: rgb(155, 146, 235);
-}
-.fotoBelu {
-    width:150px; 
-    height: 200px;
-    padding-top: 60px;
-    padding-left: 10px;
-}   
-.tituloArticulo{
-    font-family: 'Fredericka the Great', cursive;;
-font-weight: 700;
-font-size: 14px;
-text-align: center;
-}
-.articulo{ 
    
-    width:100%;     
-    height: 100%;
-    background-image: linear-gradient(to right,rgb(192, 146, 235),rgb(174, 106, 236), rgb(151, 62, 235), rgb(139, 34, 238) ); 
+    
+}
+
+.nav-link {
+    color: #a37c56 !important;
+    font-family: geo;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  border: 2px solid #634b33;
+    border-radius: 8px;
+    margin-right: 5px;
+    padding: 2px;
+    background-color: #ecfeff;
+}
+
+a:hover {
+    scale:1.1;
+    color: #0c0701 !important;
+}
+a:link {
+    font-weight: 750;
+    color: #0c0701 !important;
+}
+a:active {
+    color: #72502c !important;
+}
+
+#navActive {
+    color: #0c0c0c !important;
+}
+.logo {
+    width: 5vw;
+    height: 11vh;
+    margin-right: 760px;
+}
+
+#fotoBelu {
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 10px;
+}
+
+
+#cajaUno {
+    width:700px;     
+    height:350px;
+    background-image: linear-gradient(to right,#d2f09c,#a0bd6d, #708d40); 
     border-style: dotted;
     border-width: 5px;
     border-radius: 20px;
-    border-color: rgb(160, 79, 235)
-    }
+    border-color: #4a5e2a;
+    
+}
 
 .parrafo {
-    
-    padding-left: 155px;
-    padding-right: 20px;
-    padding-top: 5px;
     line-height: 20px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 12px;
+    font-family: geo;
+    font-size: 20px;
+    padding-right: 10px;
     
 }
 
-.boton {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    background-color: rgb(218, 199, 235);
-    padding: 2px;
-    margin-right: 10px;
-    margin-left: 350px;
-    border: 2px solid black;
-    border-radius: 8px;
-    margin-top: -80px;
+.titulo {
+    font-family: copper;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    padding: 10px;
 }
-.boton:hover {
-    scale: 1.1;
-    background-color: white;
+
+.btn {
+    color: #3a4922;
+    font-family: geo;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 2px solid #708d40;
+    border-radius: 8px;
+    margin-left: 50%;
+    padding: 5px;
+    background-color: #dbecbc;
+
+}
+
+.boton{
+    display: flex;
+justify-content: center;
+}
+
+.cajaVideo {
+    margin-top: 40px;
 }
 
 .cajaTextoVideo {
-    width: 350px;     
-    height: 620px;
-    background-color: #ede7f6;
+    width: 250px;     
+    height: 580px;
+    border: 10px solid #ffd77d;
+    background-color: #ffffae;
     border-radius: 40px;
-    border-style: solid;
-    border-color: #a16bf1;
+    margin-right: 8px;
+    ;
 }
 
 .textoVideo {
     
-    font-family: 'Quicksand', sans-serif;
-    line-height: 25px;
-    padding: 30px;
-}
-
-
-@media only screen and (max-width: 1200px) {
-    .cajaTextoVideo {
-        margin-right: 15px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .logo {
-        width: 5vw;
-        height: 9vh;
-        }
-     .fotoBelu {
-            width:100px; 
-            height: 150px;
-            padding-top: 60px;
-            padding-left: 10px;
-        }
-        .parrafo {
-    
-            padding-left: 110px;
-            padding-right: 10px;
-            padding-top: 5px;
-            line-height: 15px;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 12px;
-            
-            }
-            
-            .boton {
-                font-family: 'Quicksand', sans-serif;
-                font-size: 12px;
-                font-weight: 700;
-                text-decoration: none;
-                color: black;
-                display: inline-block;
-                background-color: rgb(218, 199, 235);
-                padding: 2px;
-                margin-right: 10px;
-                margin-left: 200px;
-                border: 2px solid black;
-                border-radius: 8px;
-                
-            }
-            .video {
-                width: 250px;
-                height: 250px;
-            }
-            .cajaTextoVideo {
-                width: 250px;     
-                height: 580px;
-                background-color: #ede7f6;
-                border-radius: 40px;
-                border-style: solid;
-                border-color: #a16bf1;
-                margin-right: 8px;
-            }
-            
-            .textoVideo {
-                
-                font-family: 'Quicksand', sans-serif;
-                line-height: 20px;
-                padding: 20px;
-                font-size: 14px;
-            }
-            nav ul li a {
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 700;
-                text-decoration: none;
-                color: black;
-                font-size: 9px;
-                
-            }
-            nav ul li {
-                display: inline-block;
-                background-color: white;
-                border: 1.5px solid black;
-                border-radius: 8px;
-                padding: 2px;
-                margin-right: 9px;
-             
-            }
-
-}
-
-@media only screen and (max-width:700px) {
-    
-    header,nav{
-        width: 100%;
-    }
-
-
-    .cajaUno, .cajaTextoVideo{
-        height: 100%;
-    }
-    
-    .boton {
-        font-size: 8px;
-    }
-    .parrafo {
-    
-        padding-left: 110px;
-        padding-right: 10px;
-        padding-top: 5px;
-        line-height: 15px;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 10px;
-        
-        }
-    
-}
-
-@media only screen and (max-width: 480px) {
-    nav ul li a {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-        color: black;
-        font-size: 9px;
-    }
-        
-    .logo {
-            width: 8vw;
-            height: 9vh;
-            }
-
-            main {
-                display: grid;
-    grid-template-areas:
-    "secUno secUno"
-    "secDos secDos";
-                grid-template-columns: 1.5fr 1.5fr;
-                grid-template-rows: repeat(2, 1fr);
-                display: flex;
-                flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-            }
-}
-
-
-#grillasDos {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-    "head nav nav nav"
-    "mainCon mainCon mainCon mainCon"
-    "foot foot foot foot";
-    grid-template-columns: .5fr 1fr 1fr .5fr;
-    grid-template-rows:.2fr 1fr .2fr;
-    background-color: #faf6f6;
-}
-
-#mainContacto {
-    grid-area: mainCon;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #bab9bb;
-
-}
-label {
-    font-family: 'Quicksand', sans-serif;
+    font-family: geo;
+    line-height: 20px;
+    padding: 20px;
+    font-size: 30x;
     text-align: center;
-    font-size: 20px;
 }
 
+.tituloVideo {
+    font-family: copper;
+    font-size: 15px;
+    font-weight: 200;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.animate__bounceIn {
+    animation-duration: 2s;
+}
+
+.animate__rotateIn {
+    animation-duration: 2s;
+}
 fieldset {
     margin: 20px;
     line-height: 30px;
     text-align: center;
-    background-color: rgb(227, 203, 252);
-    width: 700px;
+    background-color:#5d6c6d;
+    width: 600px;
+    padding: 50px;
 }
 
-legend {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-}
-
-.comentarios {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    padding: 10px;
-    
-}
-.botones {
+#botonDos {
     
     background-color: white;
-    padding: 5px;
-    margin-top: 12px;
-    margin-right: 10px;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-right: 50%;
 }
 
-.botones:hover {
-    scale: 1.1;
-    background-color: #ddd9d9;
+#botonDos:hover {
+    scale:1.1;
+    color: #0c0701 !important;
 }
 
-@media only screen and (max-width: 1200px) {
-
+.fotoBeluDos {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-    fieldset {
-        margin: 20px;
-        line-height: 40px;
-        text-align: center;
-        background-color: rgb(227, 203, 252);
-        width: 600px;
-    }
+.cajaPerfil {
+    width: 500px;
+    height: 700px;
+    background-color: #ffffe5;
+border-radius: 50px;
+border: 20px solid #a37c56;
 }
 
-@media only screen and (max-width: 700px) {
-    legend {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 18px;
-    }
+.tituloPerfil {
+    font-family: copper;
+font-weight: 700;
+font-size: 25px;
+text-align: center;
+padding: 30px;
 }
 
-
-@media only screen and (max-width: 480px) {
-    label {
-        font-family: 'Quicksand', sans-serif;
-        text-align: center;
-        font-size: 15px;
-    }
-    
-    fieldset {
-        line-height: 30px;
-        text-align: center;
-        background-color: rgb(227, 203, 252);
-        margin-left: 10px;
-        width: 100px;
-
-    }
-
-   
-    
-    legend {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 14px;
-    }
-    
-    .comentarios {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 15px;
-        padding: 10px;
-        
-        
-    }
-    .botones {
-        
-        background-color: white;
-        padding: 5px;
-        margin-top: 12px;
-        margin-right: 10px;
-        border: 2px solid black;
-        border-radius: 8px;
-        margin-bottom: 10px;
-        font-size: 10px;
-    }
-    
-}
-
-#grillaTalleres {
-    width: 100vw;
-    height: 150vh;
-    display: grid;
-    grid-template-areas:
-    "head nav"
-    "mainTall mainTall"
-    "foot foot";
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 10px;
-    background-color: #bab9bb;
-}
-
-#mainTalleres {
-    grid-area: mainTall;
-    display: grid;
-    grid-template-areas:
-    "secUnoTa secUnoTa"
-    "secDosTa secDosTa";
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    
-}
-
-#seccionUnoTalleres {
-    grid-area: secUnoTa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-#seccionDosTalleres {
-    grid-area: secDosTa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.parrafoPerfil {
+    font-family: geo;
+    line-height: 30px;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
 }
 
 #tallerUno {
-    grid-area: tallUno;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url("https://www.joyeriadeluxe.com/fr-1200x800-data/fotos/como-se-hacen-los-relojes-de-arena40.jpg");
     height: 300px;
     width: 300px;
     background-size: cover;
     background-repeat: no-repeat;
-
+    margin: 20px;
 }
 
 #tallerDos {
@@ -543,374 +235,83 @@ legend {
     width: 300px;
     background-size: cover;
     background-repeat: no-repeat;
-    grid-area: tallDos;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    margin: 20px;
 }
 
-.cajaTallerUno {
+.cajaTaller{
     height: 300px;
-    width: 700px;
-    background-color: rgb(167, 194, 230);
+    width: 550px;
+    background-color: #d2f09c;
     border-radius: 20px;
     border-style: double;
-    border-color: rgb(40, 126, 238);
-    margin-left: 20px;
+    border-color: #708d40;
+    margin: 20px;
 }
 
-.cajaTallerDos {
-    height: 300px;
-    width: 700px;
-    background-color: rgb(167, 194, 230);
-    border-radius: 20px;
-    border-style: double;
-    border-color: rgb(40, 126, 238);
-    margin-left: 20px;
-}
-
-.tituloTaller { 
-    font-family: 'Handlee', cursive;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-.parrafoTaller {
-    text-align: center;
-    line-height: 20px;
-    font-family: 'Quicksand', sans-serif;
-    padding: 20px;
-    font-size: 15px;
-    }
-
-    @media only screen and (max-width: 1200px) {
-        #tallerUno {
-            height: 280px;
-            width: 280px;
-            margin-left: 20px;
-            
-        }
-        
-        #tallerDos {
-            height: 280px;
-            width: 280px;
-            margin-left: 20px;
-        }
-
-        .cajaTallerUno {
-            height: 250px;
-            width: 650px;
-        }
-        .cajaTallerDos {
-            height: 250px;
-            width: 650px;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        #tallerUno {
-            height: 200px;
-            width: 200px;
-            margin-left: 10px;
-      
-            
-        }
-        
-        #tallerDos {
-            height: 200px;
-            width: 200px;
-            margin-left: 10px;
-    background-size: contain;
-        }
-
-        .cajaTallerUno, .cajaTallerDos {
-            margin-right: 10px;
-        }
-        
-    }
-
-    @media only screen and (max-width: 700px) {
-
-    }
-
-    @media only screen and (max-width: 480px) {
-
-            #seccionUnoTalleres {
-                display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-
-            }
-            #seccionDosTalleres {
-                display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-
-            }
-
-        
-            .cajaTallerUno, .cajaTallerDos {
-                height: 150px;
-                width: 400px;
-                margin-top: 10px;
-            }
-            .tituloTaller { 
-                font-family: 'Handlee', cursive;
-                padding: 10px;
-                font-size: 20px;
-                text-align: center;
-            }
-            .parrafoTaller {
-                text-align: center;
-                line-height: 15px;
-                font-family: 'Quicksand', sans-serif;
-                padding: 10px;
-                font-size: 10px;
-                }
-        }
-
-
-        #grillaPerfil {
-            width: 100vw;
-            height: 100vh;
-            display: grid;
-            grid-template-areas:
-            "head nav"
-            "mainPe mainPe"
-            "foot foot";
-            grid-template-columns: 50% 50%;
-            grid-row: 10% 50% 40%;
-            grid-row-gap: 10px;
-            background-color: #bab9bb;
-        }
-
-        #mainPerfil {
-            grid-area: mainPe;
-            grid-template-areas:
-            "secPe asiPe";
-            grid-template-columns: 50% 50%;
-            height: 1300px;
-        }
-
-        #sectionPerfil {
-            grid-area: secPe;
-            display: flex;
-    align-items: center;
-    justify-content: center;
-        }
-
-        #asidePerfil {
-            grid-area: asiPe;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
-            
-        }
-
-        .cajaPerfil {
-            width: 500px;
-            height: 1200px;
-            background-color: rgb(236, 186, 238);
-            border-color: black;
-        border-style: dotted;
-        border-radius: 20px;
-        }
-
-        .tituloPerfil {
-            font-family: 'Fredericka the Great', cursive;;
+.tituloTaller {
+    font-family: copper;
 font-weight: 700;
-font-size: 28px;
+font-size: 25px;
 text-align: center;
-padding-top: 10px;
-        }
-
-        .parrafoPerfil {
-            text-align: center;
-            line-height: 30px;
-            font-family: 'Quicksand', sans-serif;
-            padding: 40px;
-            }
-
-        .fotoBeluDos {
-            width: 400px;
-            height: 600px;
-        }
-
-        @media only screen and (max-width: 1200px) {
-            .cajaPerfil {
-                margin-right: 20px;
-            }
-        
-
-            }
-
-        @media only screen and (max-width: 768px) {
-            .parrafoPerfil {
-                font-size: 15px;
-                line-height: 20px;
-                font-family: 'Quicksand', sans-serif;
-                padding: 40px;
-                }
-                .fotoBeluDos {
-                    width: 280px;
-                    height: 300px;
-                }
-        }
-            @media only screen and (max-width: 700px) {
-                .parrafoPerfil {
-                    font-size: 14px;
-                    line-height: 20px;
-                    font-family: 'Quicksand', sans-serif;
-                    padding: 40px;
-                    }
-            }
-                @media only screen and (max-width: 480px) {
-
-
-                    .cajaPerfil {
-                        height: 800px;
-                        width: 400px;
-                    }
-                    .parrafoPerfil {
-                        text-align: center;
-                        line-height: 20px;
-                        font-family: 'Quicksand', sans-serif;
-                        font-size: 11px;
-                        }
-
-                        .fotoBeluDos {
-                            margin-top: -60px;
-                        }
-                }
-
-
-
-                #grillaTest {
-                    width: 100vw;
-                    height: 150vh;
-                    display: grid;
-                    grid-template-areas:
-                    "head nav"
-                    "mainTest mainTest"
-                    "foot foot";
-                    grid-template-columns: 50% 50%;
-                    grid-row-gap: 50px;
-                    background-color: #bab9bb;
-                }
-                #mainTest {
-                    grid-area: mainTest;
-                    display: grid;
-                    grid-template-areas:
-                    "secUnoT secUnoT"
-                    "secDosT secDosT";
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows: repeat(2, 1fr);
-                    grid-column-gap: 80px;
-                    grid-row-gap: 10px;
-                    
-                }
-
-                #seccionUnoTest{
-                    grid-area: secUnoT;
-            display: flex;
-    align-items: center;
-    justify-content: center;
-                }
-
-                #seccionDosTest{
-                    grid-area: secDosT;
-                    display: flex;
-            align-items: center;
-            justify-content: center;
-                        }
-
-                        .cajaSecUnoT, .cajaSecDosT {
-                            background-color: #bab9bb;
-                            width: 700px;
-                            height: 200px;
-                            border-radius: 10px;
-                            border-color: rgb(172, 106, 166);
-                            border-style:dotted;
-                            border-width: 7px;
-                            margin-left: 50px;
-                            
-                        }
-    .fotoUnoT {
-        width: 300px;
-        height: 300px;
-
-    }
-.cajafotoDosT {
-    z-index: 1;
+padding: 30px;
 }
-    .parrafoT {
-            text-align: center;
-            line-height: 30px;
-            font-family: 'Quicksand', sans-serif;
-            padding: 30px;
-            }
+
+.parrafoTaller {
+    font-family: geo;
+    line-height: 30px;
+    padding: 15px;
+    font-size: 8x;
+    text-align: center;
+}
+
+.cajaTest {
     
-            @media only screen and (max-width: 1200px) {
-                .cajaSecUnoT, .cajaSecDosT {
-                    margin-right: 20px;
-                    }
-
-                    .fotoUnoT, .fotoDosT {
-                        margin-left: 20px;
-                    }
-
-                    .fotoUnoT, .fotoDosT {
-                        scale: 0.8;
-                    }
-                    .parrafoT {
-                        line-height: 20px;
-                        padding: 20px;
-                    }
-            
-                }
-
-                
-            @media only screen and (max-width: 768px) {
-                
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    border: 10px solid #3d1664;
+    border-width: 7px;
     
-            }
-            
-            @media only screen and (max-width: 700px) {
-   
-                    #seccionUnoTest {
-                        display: flex;
-                        flex-wrap: wrap;
-                        flex-direction: column;
+}
 
-                    }
+.fotoTestUno {
+width: 400px;
+height: 400px;
+}
 
-                    #seccionDosTest {
-                        display: flex;
-                        flex-wrap: wrap;
-                        flex-direction: column;
+.fotoTestDos {
+    width: 370px;
+    height: 370px;
+    margin-top: 30px;
+    }
 
-                    }
-                    .cajaSecUnoT, .cajaSecDosT {
-                        width: 500px;
-                        height: 200px;
-                    }
-                    .parrafoT {
-                        line-height: 25px;
-                        padding: 20px;
-                    }
-            
-            }
-            
-            @media only screen and (max-width: 480px) {
-                .cajaSecUnoT, .cajaSecDosT {
-                    width: 400px;
-                    height: 200px;
-                }
-                .parrafoT {
-                    line-height: 20px;
-                    padding: 20px;
-                }
-    
-            }
+.cajaParrafoTest {
+width: 600px;
+height: 250px;
+border: 10px solid #a37c56;
+margin-top: 50px;
+}
+
+.parrafoTest {
+    font-family: geo;
+    line-height: 30px;
+    font-size: 10x;
+    text-align: center;
+    padding: 20px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+
