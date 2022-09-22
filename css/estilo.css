@@ -15,6 +15,7 @@
 body {
     width: 100vw;
     height: 160vh;
+    background-color:#ecfeff;
 }
 #header {
     height: 10vh;
@@ -300,18 +301,309 @@ margin-top: 50px;
     padding: 20px;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) 
+{
+    .nav-link {   
+      font-size: 10px !important;
+      padding: 10px !important;
+      
+    }
+    .logo {
+        width: 5vw;
+        height: 6vh;
+        margin-top: 10px;
+        margin-left: 10px;
+        
+    }
+    #cajaUno {
+        width:500px;     
+        height:200px;
+        margin-top: 40px;
+    }
+    
+    .parrafo {
+        line-height: 15px;
+        font-family: geo;
+        font-size: 12px;
+        padding-right: 10px;
+        
+    }
+    #fotoBelu {
+        width: 100px;
+        height: 100px;
+        float: left;
+        padding: 2px;
+    }
+    .titulo {
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    .btn {
+        color: #3a4922;
+        font-family: geo;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 2px solid #708d40;
+        border-radius: 8px;
+        margin-left: 50%;
+        margin-top: -20px;
+        padding: 2px;
+        background-color: #dbecbc;
+    
+    }
+    .video {
+        width: 300px;
+        height: 200px;
+    }
+    
+.cajaTextoVideo {
+    width:500px;     
+    height:140px;
+    margin-top: -70px;
+    
+}
+.cajaVideo {
+    margin-top: 10px;
+    
+}
+.tituloVideo {
+    font-family: copper;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+.textoVideo {
+    
+    font-family: geo;
+    font-size: 11px;
+    margin-top: -15px;
+    line-height: 12px;
+    padding: 10px;   
+}
+#botonDos {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 70%;
+}
+fieldset {
+    width: 400px;
+    height: 600px;
+}
+.fotoBeluDos {
+    width: 200px;
+    height: 250px;
+    margin-top: 80px;
+    
+}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+.cajaPerfil {
+    width: 500px;
+    height: 250px;
+    background-color: #ffffe5;
+border-radius: 50px;
+border: 15px solid #a37c56;
+margin-top: -30px;
+}
 
-// Large devices (desktops, 992px and up)
+.tituloPerfil {
+    font-family: copper;
+font-weight: 700;
+font-size: 15px;
+text-align: center;
+padding: 30px;
+}
+
+.parrafoPerfil {
+    font-family: geo;
+    line-height: 15px;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -20px;
+}
+#tallerUno {
+    background-image: url("https://www.joyeriadeluxe.com/fr-1200x800-data/fotos/como-se-hacen-los-relojes-de-arena40.jpg");
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    margin-top: 60px;
+}
+
+#tallerDos {
+    background-image: url("https://www.ayselucus.es/sites/default/files/noticias/fotos/6603545f-44a0-4bb5-a208-4538c50f0230.png");
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+
+.cajaTaller{
+    height: 190px;
+    width: 450px;
+    background-color: #d2f09c;
+    border-radius: 20px;
+    border-style: double;
+    border-color: #708d40;
+    margin: 20px;
+   
+}
+
+.tituloTaller {
+    font-family: copper;
+font-weight: 700;
+font-size: 15px;
+text-align: center;
+padding: 30px;
+}
+
+.parrafoTaller {
+    font-family: geo;
+    line-height: 15px;
+    padding: 15px;
+    font-size: 2x;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.fotoTestUno {
+width: 120px;
+height: 120px;
+margin-top: 60px;
+}
+
+.fotoTestDos {
+    width: 120px;
+    height: 120px;
+    margin-top: -40px;
+    }
+
+.cajaParrafoTest {
+width: 500px;
+height: 130px;
+border: 10px solid #a37c56;
+margin-top: 10px;
+
+}
+
+.parrafoTest {
+    font-family: geo;
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .nav-link {   
+        font-size: 15px !important;
+        padding: 10px !important;
+        
+      }
+      .logo {
+          width: 5vw;
+          height: 8vh;
+          margin-top: 10px;
+          margin-left: 10px;
+          
+      }
+      #cajaUno {
+          width:600px;     
+          height:170px;
+          margin-top: 40px;
+      }
+      
+      .parrafo {
+          line-height: 15px;
+          font-family: geo;
+          font-size: 12px;
+          padding-right: 10px;
+          
+      }
+      #fotoBelu {
+          width: 100px;
+          height: 100px;
+          float: left;
+          padding: 2px;
+      }
+      .titulo {
+          font-size: 15px;
+          padding: 5px;
+      }
+      
+      .btn {
+          color: #3a4922;
+          font-family: geo;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border: 2px solid #708d40;
+          border-radius: 8px;
+          margin-left: 50%;
+          margin-top: -55px;
+          padding: 2px;
+          background-color: #dbecbc;
+      
+      }
+      .video {
+          width: 400px;
+          height: 250px;
+      }
+      
+  .cajaTextoVideo {
+      width:600px;     
+      height:140px;
+      margin-top: -70px;
+      
+  }
+  .cajaVideo {
+      margin-top: 10px;
+      
+  }
+  .tituloVideo {
+      font-family: copper;
+      font-size: 12px;
+      font-weight: 200;
+      text-align: center;
+  }
+  .textoVideo {
+      
+      font-family: geo;
+      font-size: 13px;
+      margin-top: -15px;
+      line-height: 12px;
+      padding: 10px;
+      
+  }
+  .cajaPerfil {
+    width: 700px;
+    height: 250px;
+    background-color: #ffffe5;
+border-radius: 50px;
+border: 15px solid #a37c56;
+margin-top: -30px;
+}
+.parrafoPerfil {
+    font-size: 15px;
+    line-height: 20px;
+
+}
+ }
+
+/* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { ... }
 
-// X-Large devices (large desktops, 1200px and up)
+/* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
 
-// XX-Large devices (larger desktops, 1400px and up)
+/* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { ... }
 
